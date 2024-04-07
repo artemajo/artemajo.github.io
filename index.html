@@ -17,6 +17,28 @@
 			.galeria { flex-direction: column; align-items: center; }
 			.obra { width: 80%; }
 			}
+			.contacto-fixed {
+			    position: fixed;
+			    bottom: 20px;
+			    right: 20px;
+			    z-index: 1000;
+			}
+			
+			.contacto-fixed a {
+			    display: block;
+			    margin-bottom: 10px;
+			}
+			
+			.contacto-fixed img {
+			    width: 50px; /* Ajusta este valor según el tamaño deseado para los iconos */
+			    height: auto;
+			    transition: transform 0.3s ease;
+			}
+			
+			.contacto-fixed img:hover {
+			    transform: scale(1.1);
+			}
+
 		</style>
 	</head>
 	<body>
@@ -36,5 +58,14 @@
 			</div>
 			<!-- Agrega más obras aquí -->
 		</div>
+		<div class="contacto-fixed">
+		    <a href="https://www.instagram.com/mj_galeria_virtual" target="_blank" title="Sígueme en Instagram">
+		        <img src="assets/ig.svg" alt="Instagram">
+		    </a>
+		    <a href="https://wa.me/tu-número-de-whatsapp" target="_blank" title="Contáctame por WhatsApp">
+		        <img src="assets/wa.svg" alt="WhatsApp">
+		    </a>
+		</div>
+
 	</body>
 </html>
