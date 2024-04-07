@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Galería de Arte</title>
+		<style>
+			body { font-family: Arial, sans-serif; background-color: #f4f4f4; color: #333; }
+			h2 { margin-bottom: 20px; }
+			.galeria { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; padding: 0 20px; }
+			.obra { position: relative; flex: 1 1 220px; box-shadow: 0 0 8px #ccc; }
+			.obra img { width: 100%; height: auto; transition: transform 0.5s ease; }
+			.descripcion { position: absolute; bottom: 0; background: rgba(0, 0, 0, 0.5); color: #fff; width: 100%; text-align: center; padding: 10px 0; opacity: 0; transition: opacity 0.5s ease; }
+			.obra:hover img { transform: scale(1.1); }
+			.obra:hover .descripcion { opacity: 1; }
+			@media (max-width: 600px) {
+			.galeria { flex-direction: column; align-items: center; }
+			.obra { width: 80%; }
+			}
+		</style>
+	</head>
+	<body>
+		<h2 style="text-align:center;">Mi Galería de Arte</h2>
+		<div class="galeria">
+			<div class="obra">
+				<img src="img/1.jpg" alt="Obra 1">
+				<div class="descripcion">Descripción breve de la obra 1</div>
+			</div>
+			<div class="obra">
+				<img src="img/2.jpg" alt="Obra 2">
+				<div class="descripcion">Descripción breve de la obra 2</div>
+			</div>
+			<div class="obra">
+				<img src="img/3.jpg" alt="Obra 3">
+				<div class="descripcion">Descripción breve de la obra 3</div>
+			</div>
+			<!-- Agrega más obras aquí -->
+		</div>
+	</body>
+</html>
